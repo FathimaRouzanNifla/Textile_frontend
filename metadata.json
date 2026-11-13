@@ -1,0 +1,8 @@
+{
+  "name": "Mubarak Textiles",
+  "description": "Style for Every Story. Quality for Every Home. Luxury fashion, modest wear, bridal, traditional attire, and home textiles in Sainthamaruthu, Sri Lanka.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
