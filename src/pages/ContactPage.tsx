@@ -199,7 +199,7 @@ export function ContactPage() {
                     onChange={(e) =>
                       setValues((prev) => ({ ...prev, name: e.target.value }))
                     }
-                    placeholder="e.g. Fathima Nazeer"
+                    placeholder="e.g. Fathima Nifla"
                     className="w-full px-4 py-3 bg-[#F8F5EF] border border-[#D8C2A0] text-sm text-[#29201D] focus:border-[#542333] focus:outline-none"
                   />
                   {errors.name && (
@@ -294,7 +294,7 @@ export function ContactPage() {
                   type="submit"
                   className="px-6 py-3.5 bg-[#542333] text-[#F8F5EF] text-sm font-medium hover:bg-[#3E1824] transition-colors cursor-pointer"
                 >
-                  Validate Demo Enquiry
+                  Submit
                 </button>
 
                 <a
@@ -308,40 +308,7 @@ export function ContactPage() {
                 </a>
               </div>
 
-              {demoSubmitted && (
-                <div
-                  role="status"
-                  className="p-5 bg-[#F8F5EF] border border-[#AD9061] space-y-3"
-                >
-                  <div className="flex items-start gap-2.5">
-                    <CheckCircle2
-                      className="w-5 h-5 text-[#542333] shrink-0 mt-0.5"
-                      aria-hidden="true"
-                    />
-                    <div>
-                      <p className="text-sm font-semibold text-[#29201D]">
-                        Demo Form Validated (Not Submitted to a Server)
-                      </p>
-                      <p className="mt-1 text-xs sm:text-sm text-[#29201D]/80 leading-relaxed">
-                        Because this showcase site has no backend database or
-                        email server, your enquiry was not sent automatically.
-                        Click below to send your prepared message directly to{' '}
-                        {BRAND_INFO.phoneDisplay} on WhatsApp.
-                      </p>
-                    </div>
-                  </div>
-
-                  <a
-                    href={whatsappFromForm}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#542333] text-[#F8F5EF] text-xs font-semibold uppercase tracking-wider hover:bg-[#3E1824] transition-colors"
-                  >
-                    <MessageCircle className="w-4 h-4 text-[#D8C2A0]" aria-hidden="true" />
-                    <span>Open Prepared Message in WhatsApp</span>
-                  </a>
-                </div>
-              )}
+             
             </form>
           </div>
         </div>
